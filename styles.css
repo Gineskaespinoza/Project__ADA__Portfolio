@@ -172,12 +172,10 @@ a{
 .quote__text{
   width: 70%;
   text-align: center;
-  /* padding-top: 30px; */
   font-size: 1.3rem;
 }
 
 .quote__name{
-  /* padding-top: 40px; */
   font-size: 1.8rem;
 }
 
@@ -418,11 +416,10 @@ footer{
 
 }
 
+
 }
 
 @media (min-width:320px) and (max-width: 768px){
-
-
   .skills__figure{
     width: 100%;
     flex-direction: column;
@@ -439,6 +436,27 @@ footer{
     padding: 80px 20px;
   }
 
+  .projects__container{
+    width: vw;
+    justify-content: center;
+  }
+  
+  .projects__container a{
+    width: 100%;
+    
+  }
+  
+  .projects__item{
+    display: flex;
+    flex-wrap: wrap-reverse;
+
+  }
+  .projects__item img{
+    width: 100%;
+    max-width: 500px;
+    
+  }
+
 }
 
 @media (min-width:320px) and (max-width: 445px){
@@ -447,7 +465,7 @@ footer{
   }
 }
 
-@media (max-width:550px){
+/* @media (max-width:550px){
 
   .projects__container{
   width: 50%;
@@ -467,7 +485,7 @@ footer{
   height: 100%;
 
 }
-}
+} */
 
 @media (min-width: 769px) and (max-width:1099px){
 
