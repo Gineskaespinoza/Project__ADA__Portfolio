@@ -54,20 +54,18 @@ a{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 }
 
 .about__hola{
-  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .about__hey{
-  font-size: var(--font-size-tittle);
+  font-size: 25px;
   font-weight: 700;
 }
 
@@ -77,18 +75,14 @@ a{
   font-weight: 800;
 }
 
-.about__hola p{
-  padding-top: 20px ;
-}
 
 .about__pic{
-  width: 100%;
   display: flex;
   justify-content: center;
-}
+  }
 
 .about__pic img{
-  width: 50%;
+  width: 80%;
 }
 
 .about__button{
@@ -112,10 +106,11 @@ a{
   justify-content: center;
   text-align: center;
   background-color: var(--color-secundary);
-  padding: 50px 0;
+  padding: 70px 0px;
 }
 
 .skills__description{
+  width: 70%;
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -161,23 +156,25 @@ a{
 /* Section Quote */
 
 .quote{
-  height: 400px;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--color-primary);
   color: white;
+  padding: 30px 0;
 }
 
 .fa-quote-right{
-  font-size: 100px;
+  font-size: 7rem;
 }
 
 .quote__text{
-  padding-top: 20px;
-  font-size: 1.3rem;
   width: 60%;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 1.3rem;
 }
 
 .quote__name{
@@ -200,6 +197,7 @@ a{
 .projects__tittle{
   font-size: var(--font-size-tittle);
   text-align: center;
+  font-weight: 700;
 }
 
 .projects__description p{
@@ -400,7 +398,7 @@ footer{
 
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   padding: 20px;
   box-shadow: 0 0 28px 0 rgb(134 134 134 / 25%);
 
@@ -408,36 +406,45 @@ footer{
 
 .about{
   flex-direction: row;
+  justify-content: space-around;
 }
 
 .about__hola{
-  align-items: flex-start;
+ align-items: flex-start;
+ margin-left: 90px;
+  
+ }
+  
+.about__pic img{
+  min-width: 500px;
+
 }
-
-/* .about__pic img{
-  max-width: 600px;
-
-} */
 
 }
 
 @media (min-width:320px) and (max-width: 768px){
 
+
   .skills__figure{
-    width: 75%;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
   .skills__cards{
-   width: 50%;
+   width: 70%;
 
+  }
+
+  .quote{
+    padding: 80px 20px;
   }
 
 }
 
 @media (min-width: 769px) and (max-width:1099px){
+
 
   .skills__figure{
     width: 75%;
@@ -445,9 +452,13 @@ footer{
   }
 
   .skills__cards{
-   width: 35%;
+   width: 30%;
 
   }
+
+
+
+
 }
 
 
