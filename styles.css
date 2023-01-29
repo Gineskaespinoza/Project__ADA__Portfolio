@@ -72,7 +72,6 @@ a:hover{
   justify-content: center;
   align-items: center;
 }
-
 .about__hey{
   font-size: 1.5rem;
   font-weight: 700;
@@ -96,8 +95,8 @@ a:hover{
   }
 
 .about__pic img{
-  width: 70vw;
-  min-width: 500px;
+  width: 100%;
+  max-width: 500px;
 }
 
 .about__button{
@@ -383,7 +382,6 @@ textarea{
   flex-direction: column;
 } 
 
-
 form, label, textarea{
   font-weight: 800;
 }
@@ -469,23 +467,32 @@ footer{
 .about__hola{
  align-items: flex-start;
  margin-left: 130px;
- line-height: 1.7;
- 
+
  }
 
- .about__myname{
+.about__myname{
   font-size: 4rem;
+  
  }
   
 .about__pic img{
-  width: 60vw;
-  max-width: 600px;
-  padding-right: 70px;
+  width: 80vw;
+  max-width: 500px;
+  padding-right: 130px;
 }
 
 }
 
 @media (min-width:320px) and (max-width: 768px){
+
+  .about__hola{
+    text-align: center;
+  }
+
+
+  .about__pic img{
+    min-width: 400px;
+  }
 .skills__tittle{
     text-align: center;
    } .skills__figure{
