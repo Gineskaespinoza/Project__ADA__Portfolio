@@ -13,6 +13,8 @@
   --font-size-tittle: 2.5rem;
   --color-primary: #7be60e;
   --color-secundary:#f6f7fb;
+  --color-text: rgb(100, 100, 100);
+  --color-hover-button: #95f732;
 }
 
 body{
@@ -40,11 +42,20 @@ a{
   color: black;
   padding: 8px 25px;
   border-radius: 30px;
+  font-size: 200;
+}
+
+a:hover{
+  color: var(--color-primary);
 }
 
 .navigation__btn{
   color: white;
   background-color: var(--color-primary);
+}
+
+.navigation__btn:hover{
+  background-color: var(--color-hover-button);
 }
 
 /* Section About */
@@ -60,7 +71,6 @@ a{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 
 .about__hey{
@@ -74,32 +84,41 @@ a{
   font-weight: 900;
 }
 
-/* .about__hola p{
-  line-height: 2;
-} */
+.about__hola p{
+  color: var(--color-text);
+}
 
 .about__pic{
   padding-top: 15px;
   display: flex;
   justify-content: center;
+  align-items: center;
   }
 
 .about__pic img{
-  width: 100%;
-  
+  width: 70vw;
+  min-width: 500px;
 }
 
 .about__button{
   background-color:var(--color-primary);
   margin: 20px 0;
-  padding: 15px 40px;
-  width: 200px;
+  padding: 15px 20px;
   font-size: 1rem;
-  font-weight: bold;
-  text-transform: uppercase;
   color: white;
   border: none;
   border-radius: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about__button:hover{
+  background-color: var(--color-hover-button)
+}
+
+.about__button a{
+  color: white;
+  font-weight: 700;
 }
 
 /* Section Skills */
@@ -114,7 +133,6 @@ a{
 }
 
 .skills__description{
-  width: 70%;
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -123,9 +141,11 @@ a{
 .skills__tittle{
   font-size: var(--font-size-tittle);
   font-weight: 700;
+  text-align: center;
 }
 
 .skills__description p{
+  color: var(--color-text);
   margin: 15px 0;
 }
 
@@ -147,6 +167,10 @@ a{
   background-color: white;
 }
 
+.skills__cards:hover{
+  border: solid var(--color-primary) 1px;
+}
+
 .skills__cards img{
   width: 45%;
 }
@@ -155,6 +179,10 @@ a{
   margin-top: 15px;
   font-size: 1.4rem;
   font-weight: 500;
+}
+
+.skills__note:hover{
+  color: var(--color-primary);
 }
 
 /* Section Quote */
@@ -205,6 +233,7 @@ a{
 }
 
 .projects__description p{
+  color: var(--color-text);
   font-size: 1.2rem;
   padding-top: 30px;
 }
@@ -223,7 +252,11 @@ a{
   background-color: white;
   border-radius: 10px;
   border: solid #dddfe5 1px;
+}
 
+.projects__container a:hover{
+  border: solid var(--color-primary) 1px;
+  text-decoration-line: underline;
 }
 
 .projects__item{
@@ -235,7 +268,8 @@ a{
 
 }
 .projects__item img{
-  width: 200px;
+  width: 20vw;
+  height: 200px;
 }
 
 .projects__note{
@@ -274,8 +308,10 @@ a{
 }
 
 .contact__tittle p{
+  color: var(--color-text);
   margin-bottom: 18px;
   line-height: 1.6;
+  font-weight: 300;
 
 }
 
@@ -296,6 +332,14 @@ a{
   font-size: 1rem;
   color: var(--color-primary);
   padding: 20px 5px ;
+  border-radius: 50%;
+}
+
+.contact__list i:hover{
+  background-color: var(--color-primary);
+  
+  color: white;
+  padding: 5px;
 }
 
 .form__name{
@@ -356,6 +400,10 @@ form, label, textarea{
   border-radius: 30px;
 }
 
+.form__button:hover{
+  background-color: var(--color-hover-button);
+}
+
 /* section footer */
 
 footer{
@@ -384,6 +432,13 @@ footer{
   border-radius: 50%;
   padding: 15px;
   font-size: 20px;
+}
+
+.navigation__list a i:hover{
+  background-color: var(--color-primary);
+  color: white;
+  border: solid white 1px;
+
 }
 
 .navigation__by{
@@ -416,7 +471,6 @@ footer{
  margin-left: 130px;
  line-height: 1.7;
  
- 
  }
 
  .about__myname{
@@ -429,79 +483,48 @@ footer{
   padding-right: 70px;
 }
 
-.projects__item img{
-  height: 200px;
-}
-
-   .projects__container{
-    width: 100vw;
-    flex-direction: row;
-    justify-content: center;
-  }
-  
-  .projects__container a{
-    width: 90%;
-  }
-  
-  .projects__item img{
-    width: 100%;
-    max-width: 600px;
-  }
-
-
 }
 
 @media (min-width:320px) and (max-width: 768px){
-
-   .skills__tittle{
+.skills__tittle{
     text-align: center;
-   }
-  .skills__figure{
+   } .skills__figure{
     width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .skills__cards{
+.skills__cards{
    width: 70%;
 
   }
 
-  .quote{
+.quote{
     padding: 80px 20px;
   }
 
-  .projects__container{
+ .projects__container{
     width: 75vw;
     justify-content: center;
-  }
+}
   
-  .projects__container a{
+.projects__container a{
     width: 100%;
     
   }
   
-  .projects__item{
+.projects__item{
     display: flex;
   }
-  .projects__item img{
+
+.projects__item img{
     width: 100%;
     max-width: 600px;
   }
-
-}
-
-@media (min-width:320px) and (max-width: 445px){
-  .about__hola{
-    text-align: center;
-  }
-
-}
+} 
 
 @media (min-width: 769px) and (max-width:1099px){
-
-
   .skills__figure{
     width: 75%;
     flex-wrap: wrap;
@@ -510,21 +533,6 @@ footer{
   .skills__cards{
    width: 30%;
   }
-
-  /* .projects__container{
-    width: 100vw;
-    flex-direction: row;
-    justify-content: center;
-  }
-  
-  .projects__container a{
-    width: 90%;
-  }
-  
-  .projects__item img{
-    width: 100%;
-    max-width: 600px;
-  } */
 
 }
   @media (min-width:320px) and (max-width: 900px){
@@ -549,13 +557,14 @@ footer{
 
   @media (max-width:768px){
 
-    .navigation__footer{
-      width: 100vw;
-   
-    }
 
     .navigation__ul{
       display: none;
+    }
+
+    .navigation__list{
+      margin: 0 50px;
+
     }
     
   }
