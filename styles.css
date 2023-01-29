@@ -60,6 +60,7 @@ a{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 
 .about__hey{
@@ -70,17 +71,22 @@ a{
 .about__myname{
   color: var(--color-primary);
   font-size: 3.5rem;
-  font-weight: 800;
+  font-weight: 900;
 }
 
+/* .about__hola p{
+  line-height: 2;
+} */
 
 .about__pic{
+  padding-top: 15px;
   display: flex;
   justify-content: center;
   }
 
 .about__pic img{
-  width: 80%;
+  width: 100%;
+  
 }
 
 .about__button{
@@ -407,20 +413,49 @@ footer{
 
 .about__hola{
  align-items: flex-start;
- margin-left: 100px;
+ margin-left: 130px;
+ line-height: 1.7;
+ 
+ 
+ }
+
+ .about__myname{
+  font-size: 4rem;
  }
   
 .about__pic img{
-  min-width: 500px;
+  width: 60vw;
+  max-width: 600px;
+  padding-right: 70px;
 }
 
 .projects__item img{
   height: 200px;
 }
 
+   .projects__container{
+    width: 100vw;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .projects__container a{
+    width: 90%;
+  }
+  
+  .projects__item img{
+    width: 100%;
+    max-width: 600px;
+  }
+
+
 }
 
 @media (min-width:320px) and (max-width: 768px){
+
+   .skills__tittle{
+    text-align: center;
+   }
   .skills__figure{
     width: 100%;
     flex-direction: column;
@@ -476,7 +511,7 @@ footer{
    width: 30%;
   }
 
-  .projects__container{
+  /* .projects__container{
     width: 100vw;
     flex-direction: row;
     justify-content: center;
@@ -489,7 +524,7 @@ footer{
   .projects__item img{
     width: 100%;
     max-width: 600px;
-  }
+  } */
 
 }
   @media (min-width:320px) and (max-width: 900px){
