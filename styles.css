@@ -295,7 +295,6 @@ a{
 .form__name{
   display: flex;
   justify-content: space-between;
-
 }
 
 .form__name input{
@@ -314,7 +313,6 @@ a{
   width: 100%;
   display: flex;
   flex-direction: column;
-
 }
 
 input, textarea{
@@ -355,10 +353,11 @@ form, label, textarea{
 /* section footer */
 
 footer{
-  height: 250px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 70px 20px 50px;
   background-color: var(--color-primary);
 }
 
@@ -385,6 +384,7 @@ footer{
  margin-top: 30px;
  text-align: center;
  color: white;
+ font-size: 300;
 }
 
 /* Media queries */ 
@@ -408,12 +408,10 @@ footer{
 .about__hola{
  align-items: flex-start;
  margin-left: 100px;
-
  }
   
 .about__pic img{
   min-width: 500px;
-
 }
 
 .projects__item img{
@@ -451,8 +449,6 @@ footer{
   
   .projects__item{
     display: flex;
-    
-
   }
   .projects__item img{
     width: 100%;
@@ -465,6 +461,7 @@ footer{
   .about__hola{
     text-align: center;
   }
+
 }
 
 @media (min-width: 769px) and (max-width:1099px){
@@ -477,7 +474,6 @@ footer{
 
   .skills__cards{
    width: 30%;
-
   }
 
   .projects__container{
@@ -498,31 +494,38 @@ footer{
 }
   @media (min-width:320px) and (max-width: 900px){
     .contact{
-      width: 100%;
-      flex-direction: column;
-      justify-content: center;
-
+     width: 100vw;
+     flex-direction: column;
+     align-items: center;
     }
 
     .contact__social{
       width: 90vw;
-      justify-content: center;
-      align-items: center;
+      padding: 30px 0 ;
     }
 
     .contact__direct{
       width: 90vw;
       flex-direction: column;
-      justify-content: center;
-      
+      padding: 0;
+    
+    }
+  }
+
+  @media (max-width:768px){
+
+    .navigation__footer{
+      width: 100vw;
+   
     }
 
-    /* .contact__tittle h3{
-      font-size: 1.8rem;
-    } */
-
-
+    .navigation__ul{
+      display: none;
+    }
+    
   }
+
+
    
 
   
