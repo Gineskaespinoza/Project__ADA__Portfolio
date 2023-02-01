@@ -83,14 +83,14 @@ a:hover{
 
 }
 .about__hey{
-  /* padding-top: 100px; */
   font-size: 1.5rem;
   font-weight: 900;
 }
 
 .about__myname{
+  font-family: 'Mochiy Pop One', sans-serif;
   color: var(--color-primary);
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 800;
 }
 
@@ -106,7 +106,7 @@ a:hover{
   }
 
 .about__pic img{
-  width: 350px
+  width: 150px;
 }
 
 .about__button{
@@ -138,7 +138,7 @@ a:hover{
   justify-content: center;
   text-align: center;
   background-color: var(--color-secundary);
-  padding: 70px 0px;
+  padding: 130px 0px;
   margin-top: 50px;
 }
 
@@ -175,6 +175,7 @@ a:hover{
   border-radius: 15px;
   border: solid #dddfe5 1px;
   background-color: white;
+  max-width: 300px;
 }
 
 .skills__cards:hover{
@@ -198,7 +199,6 @@ a:hover{
 /* Section Quote */
 
 .quote{
-  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   /* justify-content: space-around; */
@@ -206,8 +206,7 @@ a:hover{
   background-color: var(--color-primary);
   color: white;
   padding: 30px 0;
-  line-height: 1.5;
-
+  line-height: 2.5;
 }
 
 .fa-quote-right{
@@ -230,8 +229,8 @@ a:hover{
 .projects{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 50px 0px;
+  align-items: center;
+  margin: 45px;
 }
 
 .projects__description{
@@ -252,42 +251,51 @@ a:hover{
 }
 
 .projects__container{
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  align-self: center;
+  margin: 18px;
 }
 
-.projects__container a{
-  width: 30%;
-  margin: 15px 10px;
+.projects__cards{
+  width: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0.5rem;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 8px;
   border: solid #dddfe5 1px;
 }
 
-.projects__container a:hover{
+.projects__cards figure{
+  width: 100%;
+  padding: 25px 14px;
+  border-radius: 10px;
+}
+
+.projects__cards a figure img{
+  width: 100%;
+}
+
+.projects__cards a{
+  width: 100%;
+}
+
+.projects__item img{
+  height: 180px;
+}
+
+.projects__cards:hover{
   border: solid var(--color-primary) 1px;
   text-decoration-line: underline;
-}
-
-.projects__item{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  padding: 45px 15px;
-
-}
-.projects__item img{
-  width: 20vw;
-  height: 200px;
 }
 
 .projects__note{
   font-size: 1rem;
   font-weight: 500;
+  text-align: center;
 }
 
 /* section contact */
@@ -448,7 +456,6 @@ footer{
   background-color: var(--color-primary);
   color: white;
   border: solid white 1px;
-
 }
 
 .navigation__by{
@@ -477,20 +484,30 @@ footer{
 }
 
 .about__hola{
- /* padding-top: 0; */
  align-items: flex-start;
  margin-left: 130px;
+ line-height: 1.2;
 
  }
 
 .about__myname{
-  font-size: 4rem;
+  font-size: 3.3rem;
 
  }
+
+ .about__hey{
+  font-size: 2.5rem;
+  font-weight: 900;
+  }
 
  .about__pic{
   justify-content: flex-start;
   padding-top: 100px;
+ }
+
+ .about__hola p{
+  font-size: 1.2rem;
+  padding-top: 15px;
  }
 
 .about__pic img{
@@ -502,25 +519,6 @@ footer{
 .quote__text{
   width: 60vw;
 }
-
-/* .projects__container{
-  width: 75vw;
-  justify-content: center;
-}
-
-.projects__container a{
-  width: 100%;
-
-}
-
-.projects__item{
-  display: flex;
-}
-
-.projects__item img{
-  width: 100%;
-  max-width: 600px;
-} */
 
 }
 
@@ -548,26 +546,6 @@ footer{
 .quote{
     padding: 80px 20px;
   }
-
-.projects__container{
-  width: 75vw;
-  justify-content: center;
-}
-
-.projects__container a{
-  width: 100%;
-
-}
-
-.projects__item{
-  display: flex;
-}
-
-.projects__item img{
-  width: 100%;
-  max-width: 600px;
-}
-
 
 }
 
@@ -614,9 +592,22 @@ footer{
 
     }
 
+    .projects__cards{
+      width: 40%;
+    }
+
   }
 
 
+  @media (max-width:550px){
+  .projects__cards{
+    width: 70%;
+  }
+
+  .projects__item{
+    width: 50%;
+  }
+} 
 
 
 
