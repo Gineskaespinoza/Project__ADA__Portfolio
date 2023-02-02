@@ -44,6 +44,10 @@ body{
   margin: 5px 5px;
 }
 
+.navigation__ul li a:hover{
+  color: var(--color-primary);
+  }
+
 a{
   color: black;
   padding: 8px 25px;
@@ -51,18 +55,9 @@ a{
   font-size: 200;
 }
 
-a:hover{
-  color: var(--color-primary);
-}
-
 .navigation__btn{
   color: white;
   background-color: var(--color-primary);
-}
-
-.navigation__btn:hover{
-  background-color: var(--color-hover-button);
-  color: white;
 }
 
 /* Section About */
@@ -106,7 +101,7 @@ a:hover{
   }
 
 .about__pic img{
-  width: 150px;
+  width: 300px;
 }
 
 .about__button{
@@ -119,10 +114,6 @@ a:hover{
   border-radius: 30px;
   text-transform: uppercase;
   text-align: center;
-}
-
-.about__button:hover{
-  background-color: var(--color-hover-button);
 }
 
 .about__button a{
@@ -138,8 +129,8 @@ a:hover{
   justify-content: center;
   text-align: center;
   background-color: var(--color-secundary);
-  padding: 130px 0px;
-  margin-top: 50px;
+  padding: 70px 0px;
+  /* margin-top: 50px; */
 }
 
 .skills__description{
@@ -178,10 +169,6 @@ a:hover{
   max-width: 300px;
 }
 
-.skills__cards:hover{
-  border: solid var(--color-primary) 1px;
-}
-
 .skills__cards img{
   width: 45%;
 }
@@ -192,16 +179,11 @@ a:hover{
   font-weight: 500;
 }
 
-.skills__note:hover{
-  color: var(--color-primary);
-}
-
 /* Section Quote */
 
 .quote{
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
   align-items: center;
   background-color: var(--color-primary);
   color: white;
@@ -287,11 +269,6 @@ a:hover{
   height: 180px;
 }
 
-.projects__cards:hover{
-  border: solid var(--color-primary) 1px;
-  text-decoration-line: underline;
-}
-
 .projects__note{
   font-size: 1rem;
   font-weight: 500;
@@ -355,11 +332,6 @@ a:hover{
   border-radius: 50%;
 }
 
-.contact__list i:hover{
-  background-color: var(--color-primary);
-  color: white;
-  padding: 5px;
-}
 
 .form__name{
   display: flex;
@@ -418,10 +390,6 @@ form, label, textarea{
   border-radius: 30px;
 }
 
-.form__button:hover{
-  background-color: var(--color-hover-button);
-}
-
 /* section footer */
 
 footer{
@@ -435,6 +403,18 @@ footer{
 
 .navigation__footer a{
   color: white;
+}
+
+.footer__ul{
+  display: flex;
+  align-items: center;
+  margin-right: 90px;
+}
+
+.footer__ul li{
+  display: flex;
+  align-items: center;
+  margin: 5px 5px;
 }
 
 .navigation__list{
@@ -452,18 +432,64 @@ footer{
   font-size: 20px;
 }
 
-.navigation__list a i:hover{
-  background-color: var(--color-primary);
-  color: white;
-  border: solid white 1px;
-}
-
 .navigation__by{
  margin-top: 30px;
  text-align: center;
  color: white;
  font-size: 300;
 }
+
+
+/* Página Proyectos en proceso */
+
+.page__content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  padding: 70px;
+}
+
+.page__content h1{
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: var(--color-primary);
+    font-size: 2rem;
+    font-weight: 800;
+
+}
+
+.page__img{
+  background-color: #7be60e;
+  
+}
+
+.page__img img{
+  width: 400px;
+  height: 400px;
+}
+
+.btn__home{
+  display: flex;
+  margin-top: 60px;
+}
+
+
+
+/* .btn__home a{
+  padding: 28px;
+  background-color: var(--color-primary);
+}
+
+.cta__home{
+  padding: 15pxpx;
+  border-radius: 10px;
+} */
+
+
+
+
+
 
 /* Media queries */
 
@@ -476,6 +502,11 @@ footer{
   margin-bottom: 14px;
   padding: 20px;
   box-shadow: 0 0 28px 0 rgb(134 134 134 / 25%);
+}
+
+.navigation__btn:hover{
+  background-color: var(--color-hover-button);
+  color: white;
 }
 
 .about{
@@ -492,7 +523,6 @@ footer{
 
 .about__myname{
   font-size: 3.3rem;
-
  }
 
  .about__hey{
@@ -511,17 +541,64 @@ footer{
  }
 
 .about__pic img{
-  width: 100vw;
-  max-width: 600px;
+  width: 75vw;
+  max-width: 500px;
   padding-right: 50px;
 }
+
+.about__button:hover{
+  background-color: var(--color-hover-button);
+}
+
+.skills__cards:hover{
+  border: solid var(--color-primary) 1px;
+}
+
+ .skills__note:hover{ 
+  color: var(--color-primary);
+  font-weight: 600;
+} 
 
 .quote__text{
   width: 60vw;
 }
 
+.projects__cards:hover{
+  border: solid var(--color-primary) 1px;
 }
 
+.projects__note:hover{
+  color: var(--color-primary);
+  text-decoration-line: underline;
+}
+
+.contact:hover{
+  border: 1px solid var(--color-primary);
+  transition: all 2s;
+}
+
+.contact__list i:hover{
+  background-color: var(--color-primary);
+  color: white;
+  padding: 5px;
+}
+
+.form__button:hover{
+  background-color: var(--color-hover-button);
+}
+
+.footer__ul li a:hover{
+  color: var(--color-text);
+  font-weight: 400;
+  }
+
+.navigation__list a i:hover{
+  background-color: var(--color-primary);
+  color: white;
+  border: solid white 1px;
+}
+
+}
 @media (min-width:320px) and (max-width: 768px){
 
   .about__hola{
@@ -546,7 +623,6 @@ footer{
 .quote{
     padding: 80px 20px;
   }
-
 }
 
 @media (min-width: 769px) and (max-width:1099px){
@@ -598,10 +674,10 @@ footer{
 
   }
 
-
   @media (max-width:550px){
   .projects__cards{
-    width: 70%;
+    width: 100%;
+    max-width: 300px;
   }
 
   .projects__item{
