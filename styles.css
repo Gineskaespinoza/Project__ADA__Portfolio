@@ -338,7 +338,6 @@ a{
   border-radius: 50%;
 }
 
-
 .form__name{
   display: flex;
   justify-content: space-between;
@@ -380,6 +379,18 @@ textarea{
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+textarea:focus{
+  box-shadow:  0 0 5px 0 var rgb(123, 230, 14);
+}
+
+input:valid, textarea:valid{
+  box-shadow: 0 0v5px 0 rgb(82,240,54);
+}
+
+input:invalid:not(:placeholder-shown), textarea:invalid:not(:placeholder-shown){
+  box-shadow: 0 0 5px 0 rgb(240, 63 ,54);
 }
 
 form, label, textarea{
@@ -498,7 +509,8 @@ footer{
 
 .navigation__btn:hover{
   background-color: var(--color-hover-button);
-  color: white;
+  color: black;
+  
 }
 
 .about{

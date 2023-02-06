@@ -49,6 +49,16 @@ En ésta parte inspeccioné más a fondo la plataforma, para qué funciona. Ahor
 
 
 
+
+
+
+
+
+
+
+
+
+
 ---
 
 
